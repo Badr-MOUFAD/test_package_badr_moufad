@@ -7,8 +7,8 @@ setup(
   description = 'A test repo to publish a python package to PyPI',
   author = 'Badr MOUFAD',
   author_email = 'Badr.MOUFAD@emines.um6p.ma',
-  url = 'https://github.com/user/reponame',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/user/reponame/archive/v_01.tar.gz',    # I explain this later on
+  url = 'https://github.com/Badr-MOUFAD/test_package_badr_moufad',
+  download_url = 'https://github.com/Badr-MOUFAD/test_package_badr_moufad/archive/refs/tags/v0.1.tar.gz',
   keywords = ['Example', 'test_package'],
   install_requires=[
           'numpy',
