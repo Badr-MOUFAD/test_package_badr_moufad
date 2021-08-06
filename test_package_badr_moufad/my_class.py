@@ -1,4 +1,4 @@
-from my_functions import say_hello, say_joke
+from test_package_badr_moufad.my_functions import say_hello, say_joke
 
 
 class Person:
