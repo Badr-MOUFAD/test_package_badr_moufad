@@ -12,6 +12,11 @@ class Person:
         ----------
         username : str
             the name of the user
+
+        Examples
+        --------
+        >>> print("This is an example")
+        This is an example
         """
 
         self.username = username

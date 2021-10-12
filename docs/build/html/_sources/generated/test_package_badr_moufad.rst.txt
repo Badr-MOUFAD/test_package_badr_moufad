@@ -1,0 +1,23 @@
+﻿test\_package\_badr\_moufad
+===========================
+
+.. automodule:: test_package_badr_moufad
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

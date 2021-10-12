@@ -8,6 +8,11 @@ def say_hello(username: str):
     ----------
     username : str
         the username
+
+    Examples
+    --------
+    >>> say_hello("Badr MOUFAD")
+    Hi there! Nice to meet you Badr MOUFAD
     """
 
     print(f"Hi there! Nice to meet you {username}")
@@ -17,6 +22,6 @@ def say_hello(username: str):
 def say_joke():
     """A function to say a joke
     """
-    
+
     print(f"Your as** is {np.random.rand()}\nAHAHAHAHA")
     return
