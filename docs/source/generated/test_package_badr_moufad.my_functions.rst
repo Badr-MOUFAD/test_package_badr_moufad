@@ -13,7 +13,6 @@
 
    .. autosummary::
    
-      another_function
       say_hello
       say_joke
    
