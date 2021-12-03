@@ -11,9 +11,7 @@ jobs:
     - name: Create local changes
       run: |
         echo "Hello world" > text_file.txt
-        git stash
         git checkout experiment-gh-action
-        git stash pop
         git add .
     - name: Commit files
       run: |
