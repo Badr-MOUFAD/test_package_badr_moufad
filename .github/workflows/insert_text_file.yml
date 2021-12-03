@@ -11,11 +11,11 @@ jobs:
     - name: Create local changes
       run: |
         mkdir new-docs 
-        cp -r .\docs\build\html\* .\new-docs
+        cp -r ./docs/build/html/* .\new-docs
         git checkout experiment-gh-action
-        rm -v !(.\new-docs)
-        cp -r .\new-docs\ .\
-        rm -r .\new-docs\
+        rm -v !(./new-docs)
+        cp -r ./new-docs/ ./
+        rm -r ./new-docs/
         echo -n '<?php include_once(“/index.html”); ?>' > index.php
         echo -n '{}' > composer.json
         git add .
