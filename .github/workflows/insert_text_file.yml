@@ -11,7 +11,7 @@ jobs:
     - name: Create local changes
       run: |
         mkdir new-docs 
-        cp -r ./docs/build/html/* .\new-docs
+        cp -r ./docs/build/html/* ./new-docs
         git checkout experiment-gh-action
         rm -v !(./new-docs)
         cp -r ./new-docs/ ./
