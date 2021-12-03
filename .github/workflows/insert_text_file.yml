@@ -10,8 +10,14 @@ jobs:
         fetch-depth: 0
     - name: Create local changes
       run: |
-        echo "Hello world" > text_file.txt
+        mkdir new-docs 
+        cp -r .\docs\build\html\* .\new-docs
         git checkout experiment-gh-action
+        rm -v !(.\new-docs)
+        cp -r .\new-docs\ .\
+        rm -r .\new-docs\
+        echo -n '<?php include_once(“/index.html”); ?>' > index.php
+        echo -n '{}' > composer.json
         git add .
     - name: Commit files
       run: |
