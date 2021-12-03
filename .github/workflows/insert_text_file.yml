@@ -11,6 +11,9 @@ jobs:
     - name: Create local changes
       run: |
         echo "Hello world" > text_file.txt
+        git stash
+        git checkout experiment-gh-action
+        git stash pop
         git add .
     - name: Commit files
       run: |
@@ -21,4 +24,4 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref }}
+        branch: experiment-gh-action

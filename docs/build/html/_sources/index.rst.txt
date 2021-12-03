@@ -14,6 +14,10 @@ Aside from publishing the package to PyPI, I focused on documenting the pacakge.
    This is my reference project that I always return to when builting python projects.
 
 
+.. note::
+
+   This was added using github actions
+
 Contents
 --------
 
