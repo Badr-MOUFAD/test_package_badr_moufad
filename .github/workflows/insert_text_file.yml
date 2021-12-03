@@ -13,7 +13,7 @@ jobs:
         mkdir new-docs 
         cp -r ./docs/build/html/* ./new-docs
         git checkout experiment-gh-action
-        find * -not -path ./new-docs/* -not -path new-docs -delete
+        find * -not -path "./new-docs/*" -not -path "new-docs" -delete
         cp -r ./new-docs/ ./
         rm -r ./new-docs/
         echo -n '<?php include_once(“/index.html”); ?>' > index.php
